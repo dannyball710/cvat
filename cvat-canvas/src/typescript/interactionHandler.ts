@@ -289,7 +289,7 @@ export class InteractionHandlerImpl implements InteractionHandler {
                     'stroke-width': consts.BASE_STROKE_WIDTH / this.geometry.scale,
                     stroke: isInvalidShape ? 'red' : 'black',
                 })
-                .fill({ opacity: this.selectedShapeOpacity, color: 'white' })
+                .fill({ opacity: this.selectedShapeOpacity, color: 'blue' })
                 .addClass('cvat_canvas_interact_intermediate_shape');
             this.canvas.node.prepend(this.drawnIntermediateShape.node);
         } else if (shapeType === 'mask') {
